@@ -13,10 +13,7 @@ const username = process.env.MONGO_USER
 
 const password = process.env.MONGO_PASS
 
-mongoose.connect(`mongodb+srv://${username}:${password}@atlascluster.capz8vz.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`,{
-    useNewUrlParser : true,
-    useUnifiedTopology : true,
-})
+mongoose.connect(`mongodb+srv://${username}:${password}@atlascluster.capz8vz.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`)
 
 //registration schema
 const registrationSchema  = new mongoose.Schema({
